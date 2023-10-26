@@ -58,3 +58,4 @@ def start_command(message):
 
 # Start the bot
 bot.polling()
+Expose 3306
