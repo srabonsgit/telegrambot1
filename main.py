@@ -1,15 +1,4 @@
 import telebot
-from telegram import Update
-
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, _contexttypes
-
-#commands
-
-async def start_command(update:Update, context):
-        await update.message.reply_text('Hey Buddy Iam a simple bot working for Deadpool. please contact him directly')
-async def help(update:Update, context):
-    await update.message.reply_text('Iam a robo working under, and iam in under constraction. Please contract the developer directly')
-# Replace 'YOUR_BOT_TOKEN' with your actual bot token obtained from BotFather
 bot = telebot.TeleBot('6734265868:AAGIkfyFwVm1uxEU8Xyfg-16pc_MxrDvjzY')
 
 @bot.message_handler(func=lambda message: message.text.lower() == '-alive')
